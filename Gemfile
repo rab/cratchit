@@ -9,9 +9,10 @@ gem 'mysql'
 
 # Use unicorn as the web server
 # gem 'unicorn'
+gem 'mongrel' # (1.1.5)
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
@@ -27,3 +28,6 @@ gem 'mysql'
 # group :test do
 #   gem 'webrat'
 # end
+group :test do
+  gem 'shoulda' # (2.11.0)
+end

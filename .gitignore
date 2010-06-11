@@ -1,6 +1,7 @@
 *~
 .#*
 \#*#
+.idea
 .rvmrc
 .bundle
 db/*.sqlite3

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Contract:</b>
+  <%= @role.contract_name %>
+</p>
+
+<p>
+  <b>Kind:</b>
+  <%= @role.kind %>
+</p>
+
+<p>
+  <b>Payee:</b>
+  <%= @role.payee_name %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @role.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @role.end_date %>
+</p>
+
+<p>
+  <b>Hourly rate:</b>
+  <%= @role.hourly_rate %>
+</p>
+
+<p>
+  <b>Total hours rate:</b>
+  <%= @role.total_hours_rate %>
+</p>
+
+
+<%= link_to 'Edit', edit_role_path(@role) %> |
+<%= link_to 'Back', roles_path %>

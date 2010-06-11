@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Role:</b>
+  <%= @pending_hour.role %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @pending_hour.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @pending_hour.end_date %>
+</p>
+
+<p>
+  <b>Hours:</b>
+  <%= @pending_hour.hours %>
+</p>
+
+
+<%= link_to 'Edit', edit_pending_hour_path(@pending_hour) %> |
+<%= link_to 'Back', pending_hours_path %>

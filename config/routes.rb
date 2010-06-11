@@ -1,4 +1,11 @@
 Cratchit::Application.routes.draw do |map|
+  resources :entities
+  resources :contracts
+  resources :roles
+  resources :payees
+  resources :pending_hours
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

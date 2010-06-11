@@ -1,0 +1,45 @@
+<%= form_for(@role) do |f| %>
+  <% if @role.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@role.errors.count, "error") %> prohibited this role from being saved:</h2>
+
+      <ul>
+      <% @role.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :contract %><br />
+    <%= f.select :contract_id, @contract_choices %>
+  </div>
+  <div class="field">
+    <%= f.label :kind %><br />
+    <%= f.select :kind, Role.kind_choices %>
+  </div>
+  <div class="field">
+    <%= f.label :payee %><br />
+    <%= f.select :payee_id, @payee_choices %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :hourly_rate %><br />
+    <%= f.text_field :hourly_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :total_hours_rate %><br />
+    <%= f.text_field :total_hours_rate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

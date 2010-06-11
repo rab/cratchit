@@ -1,0 +1,33 @@
+<%= form_for(@pending_hour) do |f| %>
+  <% if @pending_hour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pending_hour.errors.count, "error") %> prohibited this pending_hour from being saved:</h2>
+
+      <ul>
+      <% @pending_hour.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :role %><br />
+    <%= f.select :role_id, @role_choices %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :hours %><br />
+    <%= f.text_field :hours %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

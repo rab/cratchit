@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  role: 
+  start_date: 2010-06-11
+  end_date: 2010-06-11
+  hours: 
+
+two:
+  role: 
+  start_date: 2010-06-11
+  end_date: 2010-06-11
+  hours: 

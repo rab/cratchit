@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  contract: 
+  payee: 
+  kind: MyString
+  start_date: 2010-06-11
+  end_date: 2010-06-11
+  hourly_rate: 
+  total_hours_rate: 
+
+two:
+  contract: 
+  payee: 
+  kind: MyString
+  start_date: 2010-06-11
+  end_date: 2010-06-11
+  hourly_rate: 
+  total_hours_rate: 

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  nda_date: 2010-06-11
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+
+two:
+  name: MyString
+  nda_date: 2010-06-11
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString

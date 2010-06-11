@@ -1,0 +1,35 @@
+<h1>Listing roles</h1>
+
+<table>
+  <tr>
+    <th>Contract</th>
+    <th>Kind</th>
+    <th>Payee</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Hourly rate</th>
+    <th>Total hours rate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @roles.each do |role| %>
+  <tr>
+    <td><%= role.contract_name %></td>
+    <td><%= role.kind %></td>
+    <td><%= role.payee_name %></td>
+    <td><%= role.start_date %></td>
+    <td><%= role.end_date %></td>
+    <td><%= role.hourly_rate %></td>
+    <td><%= role.total_hours_rate %></td>
+    <td><%= link_to 'Show', role %></td>
+    <td><%= link_to 'Edit', edit_role_path(role) %></td>
+    <td><%= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Role', new_role_path %>

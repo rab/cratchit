@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  entity: 
+  start_date: 2010-06-11
+  hourly_rate: 
+  weekly_hours_limit: 
+  total_hours_limit: 
+  terms: 1
+
+two:
+  entity: 
+  start_date: 2010-06-11
+  hourly_rate: 
+  weekly_hours_limit: 
+  total_hours_limit: 
+  terms: 1

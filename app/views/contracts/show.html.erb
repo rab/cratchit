@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Entity:</b>
+  <%= @contract.entity_name %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @contract.start_date %>
+</p>
+
+<p>
+  <b>Hourly rate:</b>
+  <%= @contract.hourly_rate %>
+</p>
+
+<p>
+  <b>Weekly hours limit:</b>
+  <%= @contract.weekly_hours_limit %>
+</p>
+
+<p>
+  <b>Total hours limit:</b>
+  <%= @contract.total_hours_limit %>
+</p>
+
+<p>
+  <b>Terms:</b>
+  <%= @contract.terms %>
+</p>
+
+
+<%= link_to 'Edit', edit_contract_path(@contract) %> |
+<%= link_to 'Back', contracts_path %>

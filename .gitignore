@@ -2,7 +2,6 @@
 .#*
 \#*#
 .idea
-.rvmrc
 .bundle
 db/*.sqlite3
 db/schema.rb
@@ -10,3 +9,4 @@ doc
 log/*.log
 log/*.pid
 tmp/**/*
+vendor/ruby
